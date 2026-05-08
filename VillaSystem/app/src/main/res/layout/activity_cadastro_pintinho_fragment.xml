@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F6EE"
+    tools:context=".CadastroPintinhoFragment">
+
+    <Button
+        android:id="@+id/btnCadastrarLote"
+        android:layout_width="310dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="240dp"
+        android:backgroundTint="#F8ECDF"
+        android:fontFamily="@font/poppins_black"
+        android:text="Cadastrar Novo Lote"
+        android:textColor="#A84F0A"
+        android:textSize="20sp"
+        app:icon="@drawable/icons8_chocando_frango_50"
+        app:iconSize="34dp"
+        app:iconTint="#A94F0A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnVisuLotes"
+        android:layout_width="310dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="344dp"
+        android:backgroundTint="#F8ECDF"
+        android:fontFamily="@font/poppins_black"
+        android:text="Visualizar Lotes"
+        android:textColor="#A84F0A"
+        android:textSize="20sp"
+        app:icon="@drawable/icons8_vis_vel_50"
+        app:iconSize="34dp"
+        app:iconTint="#A94F0A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

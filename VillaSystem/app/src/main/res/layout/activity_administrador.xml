@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F6EE"
+    tools:context=".Administrador">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="413dp"
+        android:layout_height="734dp"
+        android:layout_marginTop="64dp"
+        android:background="#FAF8F0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="437dp"
+        android:layout_height="89dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/imgBtnHome"
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#F8F6EE"
+            app:srcCompat="@drawable/icons8_p_gina_inicial_50" />
+
+        <ImageButton
+            android:id="@+id/imgBtnGalinha"
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#F8F6EE"
+            app:srcCompat="@drawable/icons8_galinha_50" />
+
+        <ImageButton
+            android:id="@+id/imgBtnPerfil"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#F8F6EE"
+            app:srcCompat="@drawable/icons8_conta_de_teste_50" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

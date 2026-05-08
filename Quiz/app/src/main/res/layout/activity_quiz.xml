@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- LOGO -->
+
+    <!-- MATÉRIA -->
+
+    <!-- PERGUNTA 1 -->
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="173dp"
+        android:layout_height="158dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/unnamed" />
+
+    <TextView
+        android:id="@+id/txtMateria"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="64dp"
+        android:text="Matéria"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/imageView3"
+        app:layout_constraintTop_toTopOf="@id/imageView3" />
+
+    <TextView
+        android:id="@+id/txtPgt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Pergunta 1"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/imageView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="12dp"/>
+
+    <!-- RESPOSTAS 1 -->
+    <RadioGroup
+        android:id="@+id/rdgPergunta1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txtPgt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp">
+
+        <RadioButton
+            android:id="@+id/rbPerg1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opção 1"/>
+
+        <RadioButton
+            android:id="@+id/rbPerg2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opção 2"/>
+
+        <RadioButton
+            android:id="@+id/rbPerg3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opção 3"/>
+    </RadioGroup>
+
+    <!-- PERGUNTA 2 -->
+    <TextView
+        android:id="@+id/txtPgt2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Pergunta 2"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/rdgPergunta1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="12dp"/>
+
+    <!-- RESPOSTAS 2 -->
+    <RadioGroup
+        android:id="@+id/rdgPergunta2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txtPgt2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp">
+
+        <RadioButton
+            android:id="@+id/rbPerg4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opção 1"/>
+
+        <RadioButton
+            android:id="@+id/rbPerg5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opção 2"/>
+
+        <RadioButton
+            android:id="@+id/rbPerg6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opção 3"/>
+    </RadioGroup>
+
+    <!-- BOTÕES -->
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:backgroundTint="#FF5722"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnProx"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/btnProx"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Próximo"
+        android:backgroundTint="#4CAF50"
+        app:layout_constraintStart_toEndOf="@id/btnVoltar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

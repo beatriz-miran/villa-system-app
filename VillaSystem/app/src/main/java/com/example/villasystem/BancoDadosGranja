@@ -1,0 +1,10 @@
+CREATE DATABASE granja;
+
+USE granja;
+
+CREATE TABLE lote_pintinhos (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    data_cadastro DATE NOT NULL,
+    idade_dias INT NOT NULL,
+    quantidade_inicial INT NOT NULL
+);
